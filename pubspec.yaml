@@ -1,5 +1,5 @@
 name: my_computer_manager
-description: "A new Flutter project."
+description: "管理“此电脑”里删不掉的流氓“快捷方式”"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -35,10 +35,16 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  # Windows 注册表访问（类型安全的 Win32 Registry API 封装）
+  win32_registry: ^3.0.3
+  # WindowsException：用于把 HRESULT 转成可读的错误提示
+  win32: ^6.4.0
+  # 文件选择 / 另存为对话框（浏览图标、导出 .reg）
+  file_picker: ^12.1.3
+  # 生成 CLSID
+  uuid: ^4.6.0
 
+dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
